@@ -3,12 +3,13 @@ from dotenv import load_dotenv
 
 load_dotenv()  
 
-model_id = "google/flan-t5-xxl"  # Replace with your desired model ID
-llm = HuggingFaceHub(
-    repo_id=model_id,
-    model_kwargs={"temperature": 0, "max_length": 512}
+llm = HuggingFaceEndpoint(
+    repo_id = "tinybird/llama-2-7b-chat-hf",
+    task = "text-generation"
 )
 
-result = llm("What is the capital of France?")
+model = ChatHuggingFaceHub(llm=llm)
+
+result = model.invoke("What is the capital of France?")
 
 print(result)
