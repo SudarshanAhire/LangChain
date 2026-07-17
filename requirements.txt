@@ -1,0 +1,26 @@
+# Langchain
+langchain
+langchain-core
+
+# OpenAI Integration
+langchain-openai
+openai
+
+# Antropic Integration
+langchain-anthropic
+
+# Google gemini (PaLM) Intefration
+lanchain-google-genai
+google-generativeai
+
+# Hugging face integration 
+langchain-huggingface
+transformers
+huggingface-hub
+
+# Enviromrntal Variable Management
+python-dotenv
+
+# Machine Learning Utilities 
+pandas
+scikit-learn
