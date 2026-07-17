@@ -12,4 +12,4 @@ model = ChatHuggingFaceHub(llm=llm)
 
 result = model.invoke("What is the capital of France?")
 
-print(result)
+print(result.content)
