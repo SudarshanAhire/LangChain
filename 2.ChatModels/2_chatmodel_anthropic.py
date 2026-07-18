@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model = ChatAnthropic(model="claude-v1")
+model = ChatAnthropic(model='claude-3-5-sonnet-20241022')
 
-result = model.invoke("Write a poem about the ocean."   )
+result = model.invoke('What is the capital of India')
 
-print(result)
+print(result.content)
